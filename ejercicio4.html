@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabla-container {
+            margin: 10px; /* Agregamos margen para separar las tablas */
+            width: 48%;
+            vertical-align: top;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border:1px solid ;
+        }
+
+        th, td {
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center;
+        }    
+    </style>
+</head>
+<body>
+    <div class="tabla-container">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Ejercicio de tablas</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <td colspan="3">Apartado A</td>
+        </tr>
+    </tfoot>
+    </table>
+    </div>
+    <div class="tabla-container">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Ejercicio de tablas</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            
+        </tr>
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <td colspan="3">Apartado B</td>
+        </tr>
+    </tfoot>
+    </table>
+</div>
+    
+</body>
+</html>
