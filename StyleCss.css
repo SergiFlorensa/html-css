@@ -1,0 +1,23 @@
+*{
+    background-color: darksalmon;
+}
+
+h1{
+    color: red;
+    
+}
+p{
+    column-count: 3;
+    column-gap: 40px;
+    display:;
+    
+    
+}
+.h1:hover{
+    background-color:blueviolet;
+    ;
+}
+
+p::selection {
+    background: green;
+}
