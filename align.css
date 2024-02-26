@@ -1,0 +1,33 @@
+body{
+    background-color: wheat;
+}
+
+.container{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box{
+    background-color: lightgray;
+    border:1px solid black;
+    height: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.box-1{
+    padding-left: 15px;
+    
+}
+
+.box-2{
+    text-align: center;
+}
+
+
+.box-3{
+    text-align: right;
+    padding-right: 15px;
+}
