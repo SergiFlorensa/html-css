@@ -1,0 +1,52 @@
+caption {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: lightskyblue;
+    width: auto;
+}
+
+
+table{
+    width: 610px;
+    height: 20px;
+    background-color: beige;
+    border: 6px solid black;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: center;
+    padding-left: 3px;
+    
+    
+
+}
+tr td {
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+
+thead{
+    font-size: 20px;
+}
+    
+
+td.no-top-border, th.no-top-border {
+    border-top: none;
+    border-right: none;
+    
+}
+tfoot {
+    background-color: lightskyblue;
+    font-weight: bold; 
+    border-bottom: none;
+}
+
+.no-bottom-border {
+    border:none;
+}
+
+
+
+
