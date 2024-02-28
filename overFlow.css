@@ -203,6 +203,7 @@ header nav{
     width: 450px;
     height: 450px;
     background-color: lightgrey;
+    position: relative;
 }
 
 .diana1{
@@ -374,3 +375,33 @@ header nav{
 .box1{
     background-color: green;
 }
+
+.linea-vertical {
+    width: 1px;
+    height: 96%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    right: 65%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.linea-horizontal {
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 48%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 999;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
