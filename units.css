@@ -1,0 +1,178 @@
+body{
+    background-color: aquamarine;
+    
+}
+h1{
+    margin: 10vw;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color:black;
+
+}
+
+.circuloRojo{
+    background-color: rgb(255, 0, 0);
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    mix-blend-mode:hard-light;
+    
+}
+.circuloVerde{
+    background-color: rgb(0, 255, 21);
+    margin-left: -7vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    margin-left: 50px;
+    mix-blend-mode: screen;
+    margin-left:130px;
+}
+.circuloAzul{
+    background-color: rgb(0, 0, 255); 
+    margin-left: 7vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: -70px;
+    mix-blend-mode: screen;
+
+}
+.primarios{
+    margin-left: 510px;
+    margin-top: -325px;
+}
+
+.circRojo{
+    background-color: red;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+.circVerde{
+    background-color: rgb(8, 229, 45);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 550px;
+    margin-top:-58px;
+    margin-bottom: 20px;
+
+}
+.circAzul{
+    background-color: rgb(17, 0, 255);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 601px;
+    margin-top: -57px;
+    margin-bottom: 20px;
+
+}
+
+.redCirc{
+    background-color: red;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 502px;
+    margin-top: 5px;
+}
+.blueCirc{
+    background-color: rgb(17, 0, 255);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 551px;
+    margin-top: -37px;
+    
+}
+
+.pinkCirc{
+    background-color: rgb(255, 36, 233);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 605px;
+    margin-top: -37px;
+
+}
+
+
+.Secundarios{
+    margin-left: 510px;
+    margin-top: 60px;
+}
+
+.sumar{
+    font-weight: bold;
+    margin-left: 540px;
+    margin-top:-45px;
+    
+}
+
+.igual{
+    font-weight: bold;
+    margin-left: 592px;
+    margin-top:-35px;
+    
+}
+
+.contenedor{
+    background-color: papayawhip;
+    width: 285px;
+    height: 390px;
+    margin-left: 425px;
+    margin-top: -240px;
+    position: relative;
+    z-index: -1;
+    padding: 5px;
+    margin-top: -200px;
+    
+}
+.colores1{
+    position: absolute;
+}
+
+.Azul{
+    background-color: rgb(17, 0, 255);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 502px;
+    margin-top: 10px;
+    
+}
+.Verde{
+    background-color: rgb(14, 220, 24);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 550px;
+    margin-top: -36px;
+
+}
+
+.AzulCielo{
+    background-color: rgb(43, 240, 220);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 605px;
+    margin-top: -36px;
+
+}
+
+.verde2{
+    background-color:rgb(14, 220, 24);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 750px;
+    margin-top: 96px;
+
+}
+
+

@@ -1,0 +1,126 @@
+/*Contenedor Padre*/
+.contenedorPadre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Grupo Naranja */
+.grupoNaranja {
+    display: flex;
+    width: 100%;
+}
+
+.recuadro1,
+.recuadro2 {
+    background-color: orange;
+    width: 100%;
+    height: 8vh;
+    margin: 4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .grupoNaranja {
+        flex-direction: column; /* Cambiar la dirección del flex a columna para posicionar el recuadro 2 debajo del recuadro 1 */
+    }
+
+    .recuadro1,
+    .recuadro2,
+    .amarillo
+    {
+        width: 100%; /* Cambiar el ancho al 100% para que ocupen el ancho completo del contenedor padre */
+        margin: 10px 0; /* Eliminar el margen vertical para que los recuadros se coloquen uno debajo del otro */
+    }
+}
+
+.grupoAmarillo{
+    width: 100%; 
+    display:flex;
+    justify-content: center;
+
+}
+.amarillo{
+    background-color: yellow;
+    width: 100%;
+    height: 25vh;
+    display: block;
+    
+}
+
+.grupoAzul{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.cuadro1,.cuadro2,.cuadro3{
+    width: 32vw;
+    height: 32vh;
+    background-color: blue;
+    margin-top: 25px;
+    
+}
+@media screen and (max-width: 768px) {
+    .grupoAzul {
+        flex-direction: column; /* Cambiar la dirección del flex a columna para que los cuadros azules se coloquen uno debajo del otro */
+        align-items: center; /* Centrar los cuadros en la columna */
+    }
+
+    .cuadro1,
+    .cuadro2,
+    .cuadro3 {
+        width: calc(100% - 10px); 
+        margin-right: 0; 
+        margin-top: 10px; 
+    }
+}
+
+.grupoGrises {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gris1, .gris2, .gris3, .gris4 {
+    background-color: rgb(217, 217, 217);
+    width: calc(25% - 5px); /* Ancho del 25% del contenedor padre, menos el espacio entre cuadros */
+    height: 25vh;
+    margin-top: 3px;
+    margin-right: 5px; /* Espacio entre los cuadros grises */
+}
+
+@media screen and (max-width: 768px) {
+    .grupoGrises {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* Centra los cuadros grises en la columna */
+    }
+
+    .gris1, .gris2, .gris3, .gris4 {
+        width: calc(50% - 5px); 
+        margin-right: 0; 
+        margin-bottom: 3px; 
+    }
+}
+@media screen and (max-width: 320px) {
+    .grupoGrises {
+        justify-content: center;
+        
+    }
+
+    .gris1, .gris2, .gris3, .gris4 {
+        display: none;
+        width: 100%; /* Oculta todos los cuadros grises */
+    }
+
+    /* Muestra solo el primer cuadro gris */
+    .gris1 {
+        display: block;
+    }
+}
+
+
