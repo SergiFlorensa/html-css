@@ -12,6 +12,7 @@ White: #FFF
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 .cabecera {
     width: 100%;
@@ -29,9 +30,10 @@ header{
 .cabecera img{
     width: 20vw;
 }
-.menuCabecera {
+.menuCabecera{
     display: flex;
     gap: 10px;
+    justify-content: space-evenly;
 }
 .menuCabecera nav {
     display: flex;
@@ -46,13 +48,20 @@ header{
     
     /*Contenedor padre*/
     .imagenPrincipal {
+        background-image: url(../images/landing.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center; 
         text-align: center; 
         padding: 20px; 
-        position: relative;
         justify-content: center;
+        height: 100vh;
+        padding: 20px;
+        
     }
     
     .imagenPrincipal img{
@@ -61,6 +70,7 @@ header{
         justify-content: center;
         text-align: center;
     }
+   
     
     /*Contenedor padre*/
     .contenedor{
@@ -128,38 +138,35 @@ header{
         text-align: center;
     }
 
-    .tituloImagen{
-        width: 100%;
-        position: absolute;
-        top: 41%;
-        left: 50%;
-        justify-content: center;
-        transform: translate(-50%, -50%);
+    .tituloImagen {
+        position: absolute; /* Posiciona el título absolutamente dentro del contenedor */
+        top: 20px; /* Ajusta la posición vertical */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%); /* Centra horizontalmente */
         color: white;
         text-align: center;
         font-size: 5em;
-        display: flex;
-        margin: 5px;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-}
-.parrafo{
-width: 100%;
-justify-content: center;
-text-align: center;
-margin-top: 5px;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-position: absolute;
-font-size: 22px;
-color: white;
-display: flex;
-} 
+    }
+    .parrafo {
+        position: absolute; /* Posiciona el párrafo absolutamente dentro del contenedor */
+        bottom: 20px; /* Ajusta la posición vertical */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        color: white;
+        text-align: center;
+        font-size: 22px;
+    }
+    .tituloImagen, .parrafo {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin: 0; /* Asegura que no haya ningún margen que cause desbordamiento */
+        max-width: 90%; /* Limita el ancho del texto para que no sea más ancho que la imagen */
+    }
 
 .greenContainer {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: green;
     padding: 20px;
     text-align: left;
@@ -176,11 +183,12 @@ display: flex;
     margin-left: 5vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.textoVerde{
+.textoVerde {
     width: 50%;
-    margin-left: 4vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    float: left;
+    display: inline-block;
+    margin-bottom: 25vw;
+    justify-content: center;
 }
 .negrita {
     font-weight: bold;
@@ -188,23 +196,27 @@ display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
 }
-.imagen1 img{
-    width: 10%;
-    margin-left: 65vh;
-    margin-top: -285px;
+.contenidoImagen {
+    /* width: 50%; */
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15vh;
 }
-.imagen2 img{
-    width: 20%;
-    margin-left: 120vh;
-    margin-top: -430px;
-    display: flex;
-    float: right;
-    padding: 20px;
-}
+.logoBlanco,
+        .reproductor {
+            width: 20vw; /* Para asegurar que las imágenes no excedan el tamaño del contenedor */
+            height: auto; /* Para mantener la relación de aspecto */
+            margin-left:20px;
+            margin: 57px; /* Ajusta el espacio entre las imágenes */
+        }
+
+        .contenidoTexto {
+            width: 50%; /* Ancho del contenido de texto */
+        }
+
 
 
 
@@ -223,11 +235,19 @@ display: flex;
             width: 50vw;
         }
         .imagenPrincipal{
-            justify-content: center;
-            height: auto;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
+        background-image: url(../images/landing.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        text-align: center; 
+        padding: 20px; 
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
 
         }
         .contenedor1 {
@@ -255,20 +275,45 @@ display: flex;
         text-align: center;
         
         }
-        .greenContainer {
-            flex-direction: column; 
-        }
+        
     
         .kanye,
         .textoVerde {
-            width: 100%; 
+            width: 100;; 
         }
-        .imagen1,
-        .imagen2 {
-            order: 2; 
+        .contenidoImagen {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2vh;
         }
-        .imagen1 {
-            margin-bottom: 20px; 
+        .reproductor {
+            margin-left: 0px; 
+            width: 35vw;
         }
-    }   
+        .logoBlanco{
+            width: 35vw;
+            margin-left: 0px;
+        }
+        .greenContainer{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: green;
+            padding: 20px;
+            text-align: left;
+            color: white;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+            justify-content: space-between;
+            
+        }
+
+
+        
+    } 
     
