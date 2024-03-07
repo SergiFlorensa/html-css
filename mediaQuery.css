@@ -20,22 +20,6 @@
     height: 8vh;
     margin: 4px;
 }
-
-
-@media screen and (max-width: 768px) {
-    .grupoNaranja {
-        flex-direction: column; /* Cambiar la dirección del flex a columna para posicionar el recuadro 2 debajo del recuadro 1 */
-    }
-
-    .recuadro1,
-    .recuadro2,
-    .amarillo
-    {
-        width: 100%; /* Cambiar el ancho al 100% para que ocupen el ancho completo del contenedor padre */
-        margin: 10px 0; /* Eliminar el margen vertical para que los recuadros se coloquen uno debajo del otro */
-    }
-}
-
 .grupoAmarillo{
     width: 100%; 
     display:flex;
@@ -63,6 +47,17 @@
     
 }
 @media screen and (max-width: 768px) {
+    .grupoNaranja {
+        flex-direction: column; /* Cambiar la dirección del flex a columna para posicionar el recuadro 2 debajo del recuadro 1 */
+    }
+
+    .recuadro1,
+    .recuadro2,
+    .amarillo
+    {
+        width: 100%; /* Cambiar el ancho al 100% para que ocupen el ancho completo del contenedor padre */
+        margin: 10px 0; /* Eliminar el margen vertical para que los recuadros se coloquen uno debajo del otro */
+    }
     .grupoAzul {
         flex-direction: column; /* Cambiar la dirección del flex a columna para que los cuadros azules se coloquen uno debajo del otro */
         align-items: center; /* Centrar los cuadros en la columna */
